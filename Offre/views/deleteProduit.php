@@ -1,5 +1,5 @@
 <?php
-include '../controller/ProduitC.php';
-$Produit = new ProduitC();
-$Produit->deletProduit($_GET["IdP"]);
+include 'C:\xampp\htdocs\Offre\controller\ProduitsC.php';
+$Produit = new ProduitsC();
+$Produit->deleteProduit($_GET["IdP"]);
 header('Location:listProduits.php');

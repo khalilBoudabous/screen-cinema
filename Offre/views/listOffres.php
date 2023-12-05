@@ -17,7 +17,6 @@ $tab = $c->listOffres();
         <th>IdO</th>
         <th>FilmPropose</th>
         <th>Duree</th>
-        <th>TypeP</th>
         <th>Update</th>
         <th>Delete</th>
     </tr>
@@ -28,7 +27,7 @@ $tab = $c->listOffres();
                 <td><?= $Offre['IdO']; ?> </td>
                 <td><?= $Offre['FilmPropose']; ?> </td>
                 <td><?= $Offre['Duree']; ?> </td>
-                <td><?= $Offre['TypeP']; ?> </td>
+                
                 <td align="center">
                      <form method="POST" action="updateOffre.php">
                          <input type="submit" name="update" value="Update">

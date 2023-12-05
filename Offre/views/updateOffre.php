@@ -1,7 +1,7 @@
 <?php
 
 include '../controller/OffresC.php';
-include '../model/Offres.php';
+include '../model/Offre.php';
 $error = "";
 
 // create Offre
@@ -13,20 +13,20 @@ $OffreC = new OffresC();
 if (
     isset($_POST["IdO"]) &&
     isset($_POST["FilmPropose"]) &&
-    isset($_POST["Duree"]) &&
-    isset($_POST["TypeP"]) 
+    isset($_POST["Duree"]) 
+    
 ) {
     if (
         !empty($_POST['IdO']) &&
         !empty($_POST["FilmPropose"]) &&
-        !empty($_POST["Duree"]) &&
-        !empty($_POST["TypeP"])
+        !empty($_POST["Duree"]) 
+       
     ) {
         $Offre = new Offre(
             $_POST['IdO'],
             $_POST['FilmPropose'],
-            $_POST['Duree'],
-            $_POST['TypeP']
+            $_POST['Duree']
+    
         );
         
         $OffreC->updateOffre($Offre, $_POST['IdO']);
@@ -83,14 +83,7 @@ if (
                         <span id="erreurDuree" style="color: red"></span>
                     </td>
                 </tr>
-                <tr>
-                    <td><label for="TypeP">TypeP :</label></td>
-                    <td>
-                        <input type="text" id="TypeP" name="TypeP" value="<?php echo $Offre['TypeP'] ?>" />
-                        <span id="erreurTypeP" style="color: red"></span>
-                    </td>
-                </tr>
-
+               
                 <tr>
                   <td>
                       <input type="submit" value="Update" />

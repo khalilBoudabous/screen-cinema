@@ -1,7 +1,7 @@
 <?php
 
 include '../controller/ProduitsC.php';
-include '../model/Produits.php';
+include '../model/Produit.php';
 $error = "";
 
 // create Produit
@@ -69,14 +69,14 @@ if (
                 <tr>
                     <td><label for="NomP">NomP :</label></td>
                     <td>
-                        <input type="text" id="NomP" name="NomP" value="<?php echo $_POST['NomP'] ?>" readonly />
+                        <input type="text" id="NomP" name="NomP" value="<?php echo $_POST['NomP'] ?>" />
                         <span id="erreurNomP" style="color: red"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="Prix">Prix:</label></td>
                     <td>
-                        <input type="text" id="Prix" name="Prix" value="<?php echo $Produit['Prix'] ?>" />
+                        <input type="float" id="Prix" name="Prix" value="<?php echo $Produit['Prix'] ?>" />
                         <span id="erreurPrix" style="color: red"></span>
                     </td>
                 </tr>

@@ -1,17 +1,16 @@
 <?php
 class Offre
 {
-    private ?int $IdO = null;
-    private ?string $FilmPropose = null;
-    private ?string $Duree = null;
-    private ?string $TypeP = null;
-
-    public function _construct($IdO = null, $FilmPropose , $Duree, $TypeP)
+    private $IdO;
+    private $FilmPropose;
+    private $Duree;
+   
+    public function __construct($IdO, $FilmPropose , $Duree)
     {
         $this->IdO = $IdO;
         $this->FilmPropose = $FilmPropose;
         $this->Duree = $Duree;
-        $this->TypeP = $TypeP;
+        
     }
 
 
@@ -22,11 +21,9 @@ class Offre
 
     public function setIdO($IdO)
     {
-        $this->IdO= $IdO;
-
+        $this->IdO = $IdO;
         return $this;
     }
-
     public function getFilmPropose()
     {
         return $this->FilmPropose;
@@ -52,17 +49,7 @@ class Offre
         return $this;
     }
 
-    public function getTypeP()
-    {
-        return $this->TypeP;
-    }
-
-    public function setTypeP($TypeP)
-    {
-        $this->TypeP = $TypeP;
-
-        return $this;
-    }
+   
 
 
 }

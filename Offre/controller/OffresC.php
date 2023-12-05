@@ -5,6 +5,7 @@ require '../config.php';
 class OffresC
 {
 
+
     public function listOffres()
     {
         $sql = "SELECT * FROM Offre";
@@ -23,7 +24,6 @@ class OffresC
         $db = config::getConnexion();
         $req = $db->prepare($sql);
         $req->bindValue(':IdO', $IdO);
-
         try {
             $req->execute();
         } catch (Exception $e) {
@@ -31,19 +31,17 @@ class OffresC
         }
     }
 
-
     function addOffre($Offre)
     {
-        $sql = "INSERT INTO Offre  
-        VALUES (NULL, :IdO,:FilmPropose, :Duree,:TypeP)";
+        $sql = "INSERT INTO Offre 
+        VALUES (:IdO, :FilmPropose, :Duree)";
         $db = config::getConnexion();
         try {
             $query = $db->prepare($sql);
             $query->execute([
-                'IdO' => $Offre->getIdO(),
-                'FilmPropose' => $Offre->getFilmPropose(),
-                'Duree' => $Offre->getDuree(),
-                'TypeP' => $Offre->getTypeP(),
+                'IdO' => $_POST['IdO'],
+                'FilmPropose' => $_POST['FilmPropose'],
+                'Duree' => $_POST['Duree']
             ]);
         } catch (Exception $e) {
             echo 'Error: ' . $e->getMessage();
@@ -72,16 +70,14 @@ class OffresC
             $query = $db->prepare(
                 'UPDATE Offre SET 
                     FilmPropose = :FilmPropose, 
-                    Duree = :Duree,
-                    TypeP = :TypeP
+                    Duree = :Duree
                 WHERE IdO = :IdO'
             );
             
             $query->execute([
                 'IdO' => $IdO,
                 'FilmPropose' => $Offre->getFilmPropose(),
-                'Duree ' => $Offre->getDuree (),
-                'TypeP' => $Offre->getTypeP(),
+                'Duree' => $Offre->getDuree ()
             ]);
             
             echo $query->rowCount() . " records UPDATED successfully <br>";

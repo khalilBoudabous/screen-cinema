@@ -1,8 +1,9 @@
 <?php
-include '../controller/ProduitC.php';
+include '../controller/ProduitsC.php';
 include '../model/Produit.php';
+
 $Produit = NULL;
-$ProduitC= new ProduitC();
+$ProduitsC= new ProduitsC();
 
 if (
     isset($_POST['IdP']) && 
@@ -15,7 +16,7 @@ if (
         !empty($_POST['Prix'])
         ) {
              $Produit = new Produit($_POST['IdP'],$_POST['NomP'], $_POST['Prix']);
-             $ProduitC->addProduit($Produit);
+             $ProduitsC->addProduit($Produit);
              header('location:listProduits.php');
            } else {
         $error = "Informations manquantes";
@@ -46,7 +47,7 @@ if (
             </tr>
             <tr>
                 <td>Prix:</td>
-                <td><input type="text" name="Prix"></td>
+                <td><input type="float" name="Prix"></td>
             </tr>
                 <td>
                     <input type="submit" value="Enregistrer">
