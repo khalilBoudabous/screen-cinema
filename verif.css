@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background:url("image4.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+   color: white;
+   align-items: center;
+   text-align: center;
+}
+#ion{
+    color: white;
+    height: 20px;
+    height: 20px;
+    
+}

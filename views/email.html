@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDP oublié</title>
+    <link rel="stylesheet" href="\ff\mdp.css">
+</head>
+<body>
+    
+    <div id="index">
+        <center> <div class="title"><h1>Mot de passe oublié</h1></div></center><br><br><br><br>
+        <form method="post" action="\ff\controller\email.php">
+            <div class="user-details">
+                <div class="input-box">
+                   <center> <span class="details">Email</span></center>
+                   <center> <input type="text" name="mail"class="mail" placeholder="Entrez votre email"><ion-icon name="mail-outline"></ion-icon><style>.mail{color: white;background: transparent; border: none;  font-size: 1em;} </style></center>
+                </div>
+            </div>
+            <div class="button">
+             <center>  <input type="submit" id="mdp"value="Modifier le MDP"></center> 
+            </div>
+        </form>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
