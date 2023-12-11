@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*  background-image: url('image/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0; */
+}
+
+#navbar-box {
+  height: 10vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.sing-up {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background: url(image/Background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.sing-up-box {
+  position: relative;
+  width: 500px;
+  height: 800px;
+  background: transparent;
+  border: 1px solid brown;
+  border: 2px solid ridge(255, 255, 255, -5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: orange;
+}
+header {
+  position: relative;
+  /*     padding:  0 2rem;
+ */
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+.error-message {
+  align-items: center;
+  color: white;
+}
+.action_btn:active {
+  scale: 0.95;
+}
+
+.addoffre-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 83vh;
+  background: radial-gradient(
+    circle,
+    rgba(108, 11, 11, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 89.7vh;
+
+
+}
+
+.addoffre-section form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: lightgray;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 35%;
+  height: 61%;
+  align-items: center;
+  border-radius: 35px;
+  background: radial-gradient(
+    circle,
+    rgba(108, 11, 11, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 75vh;
+  color: white;
+
+  flex-basis: min-content;
+}
+.addoffre-section form .inputForm input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.list-offre-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.card-offre {
+  display: flex;
+  flex-direction: column;
+  width: 199px;
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.image-offre-container {
+  height: 100%;
+  width: 100%;
+}
+.offre-body {
+  background: radial-gradient(
+    circle,
+    rgba(108, 11, 11, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.section-offre h2 {
+  padding: 20px;
+  color: white;
+}
+.image-offre-container img {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-offre-body span {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.card-offre-body {
+  height: 90%;
+  flex-direction: column;
+  padding: 5px;
+}
