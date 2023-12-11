@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+.addFilm-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../../assets/images/cinemaBackgroundImage1.jpg);
+  background-repeat: no-repeat;
+  background-color:transparent;
+  background-position: 500px 75px;
+}
+.testimage{
+  background-image: url(../../assets/images/cinema6.jpg);
+
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  background-color:transparent;
+  border-radius: 8px;
+  margin: auto 180px;
+  border: 1px solid cornflowerblue;
+}
+
+.card-image {
+  width: 314px;
+  height: 136px;
+  background-image: url(../../assets/images/cinema2.jpg);
+  background-size: 326px 203px;
+  position: relative;
+  background-repeat: no-repeat;
+  font-weight: 800;
+}
+
+.card-heading {
+  position: center;
+  left: 23%;
+  top: 5%;
+  right: 10%;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: transparent;
+  line-height: 1.222;
+}
+
+.card-form {
+  padding: 1rem;
+  align-items: center;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: blue;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.form-button {
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 800;
+  background-color: #6658d3;
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+}
+
+.btn-group form .btn btn-primary {
+  font-size: 20px;
+}
+.a {
+  font-size: 20px;
+}
